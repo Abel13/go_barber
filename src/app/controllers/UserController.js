@@ -29,7 +29,7 @@ class UserController {
     const user = await User.create(req.body)
       .then(() => {})
       .catch(err => {
-        console.log(err);
+        // console.log(err);
       });
     return res.json(user);
   }
